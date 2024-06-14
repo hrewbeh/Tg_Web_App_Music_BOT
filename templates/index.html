@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг</title>
+    <style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f99e6;
+    color: #fff;
+    text-align: center;
+}
+
+
+header {
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+}
+
+.content h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+.content p {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+            <a href="/registration">Регистрация</a>
+            <a href="/login">Вход</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Готовы</h1>
+            <p>Это простой лендинг для сдачи домашки</p>
+        </div>
+    </main>
+</body>
+</html>

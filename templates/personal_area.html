@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://kaifolog.ru/uploads/posts/2015-05/1432912507_005.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        </style>
+</head>
+<body>
+ <div class="container">
+        <h1>Welcome, <span>{{ user.username }}</span></h1>
+        <div class="user-info">
+            <p>Telegram ID: <span>{{ user.tg_id }}</span></p>
+            <p>Email: <span>{{ user.email }}</span></p>
+        </div>
+        <form action="/download" method="post">
+            <input type="hidden" name="tg_id" value="{{ user.tg_id }}">
+            <label for="query">Enter music name:</label>
+            <input type="text" id="query" name="query" required>
+            <button type="submit" class="btn">Download</button>
+        </form>
+
+        <div class="audio-player">
+
+        </div>
+    </div>
+
+</body>
+</html>

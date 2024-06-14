@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://kaifolog.ru/uploads/posts/2015-05/1432912507_005.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form h2 {
+            margin-top: 0;
+            color: #000;
+        }
+        .form label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #000;
+        }
+        .form input[type="text"],
+        .form input[type="email"],
+        .form textarea,
+        .form select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form input[type="text"]::placeholder,
+        .form input[type="email"]::placeholder,
+        .form textarea::placeholder {
+            color: #888;
+        }
+        .form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .form .half-width {
+            width: calc(50% - 11px);
+            float: left;
+        }
+        .form .half-width + .half-width {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+            <form class="form" action="/registration" method="post">
+                <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="First and last name" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+                <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="tg_id">TG_ID</label>
+            <input type="tg_id" id="tg_id" name="tg_id" placeholder="TG_ID" required>
+
+            <div class="form-footer">
+                <br>
+                <button class="btn">Predict Now</button>
+                <hr>
+                <a href="/login">login</a>
+            </div>
+        </form>
+
+</body>
+</html>
