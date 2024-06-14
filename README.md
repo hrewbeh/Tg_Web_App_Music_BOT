@@ -9,11 +9,7 @@
         <pre><code>git clone https://github.com/ваше_имя/имя_репозитория.git
 cd tg_vk_api_for_pars</code></pre>
         
-        <h3>2. Установка зависимостей</h3>
-        <p>Создайте и активируйте виртуальное окружение:</p>
-        <pre><code>python -m venv venv
-source venv/bin/activate  # Для Unix-подобных систем
-venv\Scripts\activate  # Для Windows</code></pre>
+        
         <p>Установите зависимости из файла <code>requirements.txt</code>:</p>
         <pre><code>pip install -r requirements.txt</code></pre>
         
