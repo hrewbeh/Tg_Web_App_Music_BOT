@@ -1,0 +1,3 @@
+.venv
+tg_bot/.env
+test.db
